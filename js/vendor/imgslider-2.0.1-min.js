@@ -9,8 +9,8 @@ var  first=true;
                 var i = t(this),
                     e = i.width();
                 if (i.find(".image img").css("width", e + "px"), i.find(".left.image").css("width", Math.floor(e * n.initialPosition)), n.showInstruction) {
-                    var s = null;
-                    s = t("div.instruction"), 0 === s.length && (s = t("<div></div>").addClass("instruction").append("<p></p>"), i.append(s)), s.children("p").text(n.instructionText), s.css("left", 100 * (n.initialPosition - s.children("p").width() / (2 * e)) + "%")
+                  //  var s = null;
+                  //  s = t("div.instruction"), 0 === s.length && (s = t("<div></div>").addClass("instruction").append("<p></p>"), i.append(s)), s.children("p").text(n.instructionText), s.css("left", 100 * (n.initialPosition - s.children("p").width() / (2 * e)) + "%")
                               
 			   }
             },
