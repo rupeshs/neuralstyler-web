@@ -13,7 +13,7 @@
         {
             "location": "/options/", 
             "text": "NeuralStyler has following settings\n\n\n\n\nStyles\n\n\nResolution\n\n\nKeep aspect ratio\n\n\nNo scaling\n\n\nStyle strenth\n\n\nVideo selection\n\n\n\n\nStyles\n\n\nYou can select wide variety of styles for artistic styling.\n\n\n\n\nStyles uses plugin like system for more details styles help page.\n\n\nResolution\n\n\nVideo/Image output resolution\nFrom version 2.0 it is possible to give custom size\n\n\nKeep Aspect Ratio\n\n\nIf this is enabled then output will keep its aspect ratio.\n\n\nNo scaling\n\n\nCompletly disable scaling.\nBeware if your input image/video having high resoltion then it will take longer time to process and the amount of RAM required will be high.\n\n\nStyle strength\n\n\nIntensity of styling can be adjusted from 0 to 100%\n\n\nVideo selection\n\n\nYou can select the section of video for styling", 
-            "title": "settings"
+            "title": "Settings"
         }, 
         {
             "location": "/options/#styles", 
@@ -48,7 +48,7 @@
         {
             "location": "/styles/", 
             "text": "How to install style\n\n\nSimply download the zip file from \nstyles page\n and extract it you will get two files\n\n\n\n\nstyle_name.model\n\n\nstyle_name-style.jpg\n\n\n\n\ncopy these two files to the styles folder and run NeuralStyler.\n\n\nCreate your own styles\n\n\nPlease read the neural network training instructions\n\n\nDependencies\n\n\n\n\nChainer\n\n\nMicrosoft COCO dataset\n\n\n\n\npython train.py -s (style_image_path) -d (training_dataset_path) -g (use_gpu ? gpu_id : -1)", 
-            "title": "styles"
+            "title": "Styles"
         }, 
         {
             "location": "/styles/#how-to-install-style", 
