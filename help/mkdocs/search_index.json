@@ -1,0 +1,89 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "NeuralStyler\n\n\nTurn Your Videos/Photos/GIF into Art\n\n\nNeuralStyler Artificial Intelligence converts your videos into art works by using styles of famous artists: Van Gogh,Wassily Kandinsky,Georges Seurat etc\n\n\n\n\nStyle videos,gif animation and photos\n\n\nNo need to upload videos (Offline processing)\n\n\nFaster AI styling algorithm\n\n\nExtensible styling system(Plugin)\n\n\nstyle sterngth \n\n\nStyle video section", 
+            "title": "Introduction"
+        }, 
+        {
+            "location": "/#neuralstyler", 
+            "text": "Turn Your Videos/Photos/GIF into Art  NeuralStyler Artificial Intelligence converts your videos into art works by using styles of famous artists: Van Gogh,Wassily Kandinsky,Georges Seurat etc   Style videos,gif animation and photos  No need to upload videos (Offline processing)  Faster AI styling algorithm  Extensible styling system(Plugin)  style sterngth   Style video section", 
+            "title": "NeuralStyler"
+        }, 
+        {
+            "location": "/options/", 
+            "text": "NeuralStyler has following settings\n\n\n\n\nStyles\n\n\nResolution\n\n\nKeep aspect ratio\n\n\nNo scaling\n\n\nStyle strenth\n\n\nVideo selection\n\n\n\n\nStyles\n\n\nYou can select wide variety of styles for artistic styling.\n\n\n\n\nStyles uses plugin like system for more details styles help page.\n\n\nResolution\n\n\nVideo/Image output resolution\nFrom version 2.0 it is possible to give custom size\n\n\nKeep Aspect Ratio\n\n\nIf this is enabled then output will keep its aspect ratio.\n\n\nNo scaling\n\n\nCompletly disable scaling.\nBeware if your input image/video having high resoltion then it will take longer time to process and the amount of RAM required will be high.\n\n\nStyle strength\n\n\nIntensity of styling can be adjusted from 0 to 100%\n\n\nVideo selection\n\n\nYou can select the section of video for styling", 
+            "title": "settings"
+        }, 
+        {
+            "location": "/options/#styles", 
+            "text": "You can select wide variety of styles for artistic styling.   Styles uses plugin like system for more details styles help page.", 
+            "title": "Styles"
+        }, 
+        {
+            "location": "/options/#resolution", 
+            "text": "Video/Image output resolution\nFrom version 2.0 it is possible to give custom size", 
+            "title": "Resolution"
+        }, 
+        {
+            "location": "/options/#keep-aspect-ratio", 
+            "text": "If this is enabled then output will keep its aspect ratio.", 
+            "title": "Keep Aspect Ratio"
+        }, 
+        {
+            "location": "/options/#no-scaling", 
+            "text": "Completly disable scaling.\nBeware if your input image/video having high resoltion then it will take longer time to process and the amount of RAM required will be high.", 
+            "title": "No scaling"
+        }, 
+        {
+            "location": "/options/#style-strength", 
+            "text": "Intensity of styling can be adjusted from 0 to 100%", 
+            "title": "Style strength"
+        }, 
+        {
+            "location": "/options/#video-selection", 
+            "text": "You can select the section of video for styling", 
+            "title": "Video selection"
+        }, 
+        {
+            "location": "/styles/", 
+            "text": "How to install style\n\n\nSimply download the zip file from \nstyles page\n and extract it you will get two files\n\n\n\n\nstyle_name.model\n\n\nstyle_name-style.jpg\n\n\n\n\ncopy these two files to the styles folder and run NeuralStyler.\n\n\nCreate your own styles\n\n\nPlease read the neural network training instructions\n\n\nDependencies\n\n\n\n\nChainer\n\n\nMicrosoft COCO dataset\n\n\n\n\npython train.py -s (style_image_path) -d (training_dataset_path) -g (use_gpu ? gpu_id : -1)", 
+            "title": "styles"
+        }, 
+        {
+            "location": "/styles/#how-to-install-style", 
+            "text": "Simply download the zip file from  styles page  and extract it you will get two files   style_name.model  style_name-style.jpg   copy these two files to the styles folder and run NeuralStyler.", 
+            "title": "How to install style"
+        }, 
+        {
+            "location": "/styles/#create-your-own-styles", 
+            "text": "Please read the neural network training instructions  Dependencies   Chainer  Microsoft COCO dataset   python train.py -s (style_image_path) -d (training_dataset_path) -g (use_gpu ? gpu_id : -1)", 
+            "title": "Create your own styles"
+        }, 
+        {
+            "location": "/hstyle/", 
+            "text": "Basics\n\n\nUsing NeuralStyle You can style video files,photos and Gifs.\n\n\n\n\n\n\n\n\nMedia\n\n\nInput format\n\n\nOutput format\n\n\n\n\n\n\n\n\n\n\nVideo\n\n\nAll major video formats\n\n\nMP4\n\n\n\n\n\n\nPhotos\n\n\nAll major image formats\n\n\njpeg\n\n\n\n\n\n\nGif\n\n\n--\n\n\ngif\n\n\n\n\n\n\n\n\nHow to Style\n\n\nSelect the video you want to style,select style,resolution etc then press the \"Create Artistic Style\" button\n\n\n\n\nWait for some time it will style your video.\nStyling speed depends on\n\n\n\n\nCPU clock speed\n\n\nResolution (lower the resolution faster will be the styling)\n\n\nAmount of RAM available(High resolution images/video needs more RAM)\n\n\n\n\nFor photos you can adjut style strength after styling \n\n\n\n\nHow to view styled videos/photos\n\n\nTo open output folder you can use \"Open Styled Videos\" button\n\n\nHow to download new style\n\n\nNew styles will be avilable \nhere", 
+            "title": "How to style"
+        }, 
+        {
+            "location": "/hstyle/#basics", 
+            "text": "Using NeuralStyle You can style video files,photos and Gifs.     Media  Input format  Output format      Video  All major video formats  MP4    Photos  All major image formats  jpeg    Gif  --  gif", 
+            "title": "Basics"
+        }, 
+        {
+            "location": "/hstyle/#how-to-style", 
+            "text": "Select the video you want to style,select style,resolution etc then press the \"Create Artistic Style\" button   Wait for some time it will style your video.\nStyling speed depends on   CPU clock speed  Resolution (lower the resolution faster will be the styling)  Amount of RAM available(High resolution images/video needs more RAM)   For photos you can adjut style strength after styling", 
+            "title": "How to Style"
+        }, 
+        {
+            "location": "/hstyle/#how-to-view-styled-videosphotos", 
+            "text": "To open output folder you can use \"Open Styled Videos\" button", 
+            "title": "How to view styled videos/photos"
+        }, 
+        {
+            "location": "/hstyle/#how-to-download-new-style", 
+            "text": "New styles will be avilable  here", 
+            "title": "How to download new style"
+        }
+    ]
+}
