@@ -1,236 +1,303 @@
-<!doctype html>
+<!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-         <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>NeuralStyler AI-Style transfer video software</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
-	   <meta name="description" content="Turn Your Videos/Photos/GIF into Art">
-       <meta name="author" content="Rupesh Sreeraman">
-	   <meta name="keywords" content="neuralstyle,ai art generator,neural style,neuralstyler,neural style transfer app,style transfer video,ai-generated art" />
-       <link rel="shortcut icon" href="img/favicon.ico">
-	   
-	   <meta property="og:title" content="NeuralStyler"/>
-       <meta property="og:site_name" content="NeuralStyler AI"/>
-       <meta property="og:description" content="Turn Your Videos/Photos/GIF into Art"/>
-       <meta property="og:image" content="http://neuralstyler.sourceforge.net/img/og_image.png"/>
-	   
-	   <link href='http://fonts.googleapis.com/css?family=Play' rel='stylesheet' type='text/css'>
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+  <!--<![endif]-->
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>NeuralStyler AI - Style transfer video software</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <meta name="description" content="Turn Your Videos/Photos/GIF into Art" />
+    <meta name="author" content="Rupesh Sreeraman" />
+    <meta
+      name="keywords"
+      content="neuralstyle,ai art generator,neural style,neuralstyler,neural style transfer app,style transfer video,ai-generated art"
+    />
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
+    <!-- Open Graph -->
+    <meta property="og:url" content="http://neuralstyler.com" />
+    <meta property="og:title" content="NeuralStyler" />
+    <meta property="og:site_name" content="NeuralStyler AI" />
+    <meta
+      property="og:description"
+      content="Turn Your Videos/Photos/GIF into Art"
+    />
+    <meta
+      property="og:image"
+      content="http://neuralstyler.sourceforge.net/img/og_image.png"
+    />
+
+    <link
+      href="http://fonts.googleapis.com/css?family=Play"
+      rel="stylesheet"
+      type="text/css"
+    />
 
     <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-		<link rel="stylesheet" href="css/imgslider-2.0.1-min.css">
-        <style>
-            body {
-                padding-top: 80px;
-                padding-bottom: 20px;
-				font-family: 'Play', sans-serif;
-            }
-			.imrow
-{
-    display:table;
-	margin:0 auto;
-}
-.Column
-{
-     margin:10px;
-    display: inline-block;
-	
-   
-}
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/imgslider-2.0.1-min.css" />
+    <style>
+      body {
+        padding-top: 80px;
+        padding-bottom: 20px;
+        font-family: "Play", sans-serif;
+      }
+      .imrow {
+        display: table;
+        margin: 0 auto;
+      }
+      .Column {
+        margin: 10px;
+        display: inline-block;
+      }
+    </style>
 
-        </style>
-		
-   
-        <link rel="stylesheet" href="css/main.css">
-
-       
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <!--[if lt IE 8]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="http://browsehappy.com/">upgrade your browser</a> to improve
+        your experience.
+      </p>
+    <![endif]-->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#navbar"
+            aria-expanded="false"
+            aria-controls="navbar"
+          >
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-		<a class="navbar-brand" href="index.html"><img src="img/head.png" style="height:45px;margin-top:-10px;display:inline-block;"></a> </li>
-		</div>
+          <a class="navbar-brand" href="index.html"
+            ><img
+              src="img/head.png"
+              style="height: 45px; margin-top: -10px; display: inline-block"
+          /></a>
+        </div>
         <div id="navbar" class="navbar-collapse collapse">
-		
           <ul class="nav navbar-nav">
-		 <li>	<a href="pro.html" ><i class="glyphicon glyphicon-download-alt"></i> Try NeuralStyler Pro</a>
-    	<li>	<a href="downloads.html" ><i class="glyphicon glyphicon-download-alt"></i> Downloads</a>
-     <li >  <a href="styles.html" > Styles</a></li>
-   
-   </li>
-   </ul>
-        </div><!--/.navbar-collapse -->
+            <li>
+              <a href="pro.html"
+                ><i class="glyphicon glyphicon-download-alt"></i> Try
+                NeuralStyler Pro</a
+              >
+            </li>
+            <li>
+              <a href="downloads.html"
+                ><i class="glyphicon glyphicon-download-alt"></i> Downloads</a
+              >
+            </li>
+            <li><a href="styles.html"> Styles</a></li>
+          </ul>
+        </div>
+        <!--/.navbar-collapse -->
       </div>
     </nav>
 
-    <!-- Main jumbotron for a primary marketing message or call to action -->
-
-    
-
-    <div class="container" style="margin-top:5px;">
-      <!-- Example row of columns -->
+    <div class="container" style="margin-top: 5px">
       <div class="row">
         <div class="col-md-6">
-          <div style="width:400px;margin:0 auto;">
-		<div class="slider responsive">
+          <div style="width: 400px; margin: 0 auto">
+            <div class="slider responsive">
+              <div class="left image">
+                <img src="img/neuralstyler-before.gif" />
+              </div>
 
-  <div class="left image">
-
-    <img src="img/neuralstyler-before.gif"/>
-
-  </div>
-
-<div class="right image">
-
-    <img src="img/neuralstyler-after2.gif"/>
-
-  </div>
-  
-</div>
-<small>Click and drag above split line</small>
-</div>
+              <div class="right image">
+                <img src="img/neuralstyler-after2.gif" />
+              </div>
+            </div>
+            <small>Click and drag above split line</small>
+          </div>
         </div>
         <div class="col-md-6">
-		
-		 <h3>NeuralStyler 2.0</h3>
-		 <h4>Turn Your Videos/Photos/GIF into Art</h4>
-            	 <div style="font-size:16px;line-height:30px;">
-		   NeuralStyler Artificial Intelligence converts your videos into art works by using styles of famous artists: Van Gogh,Wassily Kandinsky,Georges Seurat etc
-		   <ul>
-		   <li>Style videos,gif animation and photos</li>
-		   <li>No need to upload videos <b>(Offline processing)</b></li>
-		   <li>Faster AI styling algorithm</li>
-           <li><a href="styles.html">Extensible styling system(Plugin)</a></li>
-		   <b style="color:red"> NeuralStyler 3.0 (Pro) is available</b> <a class="btn btn-primary btn-lg" href="pro.html" role="button">  <i class="glyphicon glyphicon-download-alt"></i>  Try NeuralStyler Pro</a>
+          <h1>NeuralStyler 2.0</h1>
+          <h4>Turn Your Videos/Photos/GIF into Art</h4>
+          <div style="font-size: 16px; line-height: 30px">
+            NeuralStyler Artificial Intelligence converts your videos into art
+            works by using styles of famous artists: Van Gogh,Wassily
+            Kandinsky,Georges Seurat etc
+            <h2>Features</h2>
+            <ul>
+              <li>Style videos,gif animation and photos</li>
+              <li>No need to upload videos <b>(Offline processing)</b></li>
+              <li>Faster AI styling algorithm</li>
+              <li>
+                <a href="styles.html">Extensible styling system(Plugin)</a>
+              </li>
+              <b style="color: red"> NeuralStyler 3.0 (Pro) is available</b>
+              <a class="btn btn-primary btn-lg" href="pro.html" role="button">
+                <i class="glyphicon glyphicon-download-alt"></i> Try
+                NeuralStyler Pro</a
+              >
+            </ul>
 
-		  <ul>
-
- 
-         
-		  <p style="margin-left:-80px;margin-top:25px;"><a style="margin:5px;" class="btn btn-default btn-lg" target="_blank" href="https://www.instagram.com/neuralstyler.ai/" role="button">  <img src="img/instagram_icon.png"/> Follow us on Instagram</a>
-		 <a  class="btn btn-success btn-lg" href="downloads.html" role="button">  <i class="glyphicon glyphicon-download-alt"></i>  Download it for free</a></p>
-		  
-		  
-       </div>
-        
+            <p style="margin-left: -80px; margin-top: 25px">
+              <a
+                style="margin: 5px"
+                class="btn btn-default btn-lg"
+                target="_blank"
+                href="https://www.instagram.com/neuralstyler.ai/"
+                role="button"
+              >
+                <img src="img/instagram_icon.png" /> Follow us on Instagram</a
+              >
+              <a
+                class="btn btn-success btn-lg"
+                href="downloads.html"
+                role="button"
+              >
+                <i class="glyphicon glyphicon-download-alt"></i> Download it for
+                free</a
+              >
+            </p>
+          </div>
+        </div>
       </div>
-				 </div>
-	
 
-   <hr>
-	<div class="row">
-	<div class="col-md-6">
-	 <div style="margin:0 auto;">
-	<img class="img-responsive" src="img/neuralstyler2.jpg" />
-	</div>
-	</div>
-	<div class="col-md-6" style="font-size:16px;line-height:25px;" >
-	 <div style="width:400px;margin:0 auto;">
-	 <h3>Version 2 What's new?</h3>
-	<ul>  
-	
-	       <li>Adjust style strength </li>
-		   <li>Video trimmer</li>
-		   <li>Added option to keep aspect ratio</b></li>
-		   <li>Custom resolution</li>
-		   <li>Added pause functionality</li>
-		   <li>Added online help documentation</li>
-		   <li>Option to disable scaling</li>
-           <li>Option to preview styled frame</li>
-		   <li>Drag and drop support</li>
-		  <ul>
-		  </div>
-	</div>
-	
-	</div>
-	 <hr>
-	<div class="imrow">
-  
-    <div class="Column">
-      <img src="img/styles/kandinsky-style.jpg" alt="kandinsky-style">
-      <div class="caption">
-        <h4>Kandinsky style</h4>
-             </div>
-    </div>
-	
- 
-    <div class="Column">
-      <img src="img/styles/starrynight-style.jpg" alt="starrynight-style">
-      <div class="caption">
-        <h4>Starry Night</h4>
-             </div>
-    </div>
-	
-  
+      <hr />
+      <div class="row">
+        <div class="col-md-6">
+          <div style="margin: 0 auto">
+            <img class="img-responsive" src="img/neuralstyler2.jpg" />
+          </div>
+        </div>
+        <div class="col-md-6" style="font-size: 16px; line-height: 25px">
+          <div style="width: 400px; margin: 0 auto">
+            <h3>Version 2 What's new?</h3>
+            <ul>
+              <li>Adjust style strength</li>
+              <li>Video trimmer</li>
+              <li>Added option to keep aspect ratio</li>
+              <li>Custom resolution</li>
+              <li>Added pause functionality</li>
+              <li>Added online help documentation</li>
+              <li>Option to disable scaling</li>
+              <li>Option to preview styled frame</li>
+              <li>Drag and drop support</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <hr />
+      <div class="imrow">
+        <div class="Column">
+          <img src="img/styles/kandinsky-style.jpg" alt="kandinsky-style" />
+          <div class="caption">
+            <h4>Kandinsky style</h4>
+          </div>
+        </div>
 
-    <div class="Column">
-      <img src="img/styles/hokusai-style.jpg" alt="hokusai-style">
-      <div class="caption">
-        <h4>Hokusai style</h4>
-             </div>
-    </div>
+        <div class="Column">
+          <img src="img/styles/starrynight-style.jpg" alt="starrynight-style" />
+          <div class="caption">
+            <h4>Starry Night</h4>
+          </div>
+        </div>
 
-  
-    <div class="Column" >
-      <img src="img/styles/cubist-style.jpg" alt="cubist-style">
-      <div class="caption">
-        <h4>Cubist style</h4>
-             </div>
-    </div>
-<div class="Column" >
-      <img src="img/styles/seurat-style.jpg" alt="seurat-style">
-      <div class="caption">
-        <h4>Seurat style</h4>
-             </div>
-</div><br>
-	
-</div>
-<center ><a style="margin:0 auto;" class="btn btn-primary btn-lg" href="styles.html" role="button"><i class="glyphicon glyphicon-download"></i>  Get more styles</a></center>
+        <div class="Column">
+          <img src="img/styles/hokusai-style.jpg" alt="hokusai-style" />
+          <div class="caption">
+            <h4>Hokusai style</h4>
+          </div>
+        </div>
 
+        <div class="Column">
+          <img src="img/styles/cubist-style.jpg" alt="cubist-style" />
+          <div class="caption">
+            <h4>Cubist style</h4>
+          </div>
+        </div>
+        <div class="Column">
+          <img src="img/styles/seurat-style.jpg" alt="seurat-style" />
+          <div class="caption">
+            <h4>Seurat style</h4>
+          </div>
+        </div>
+        <br />
+      </div>
+      <center>
+        <a
+          style="margin: 0 auto"
+          class="btn btn-primary btn-lg"
+          href="styles.html"
+          role="button"
+          ><i class="glyphicon glyphicon-download"></i> Get more styles</a
+        >
+      </center>
 
-      <hr>
+      <hr />
 
       <footer>
-        <p>&copy;  2016-2021<a href="https://github.com/rupeshs"> Rupesh Sreeraman</a><a href="terms.html" style="margin-left:5px;"> Terms of use</a></p>
+        <p>
+          &copy; 2016-2021<a href="https://github.com/rupeshs">
+            Rupesh Sreeraman</a
+          ><a href="terms.html" style="margin-left: 5px"> Terms of use</a>
+        </p>
       </footer>
-	  
-    </div> <!-- /container -->        
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    </div>
+    <!-- /container -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
+        );
+    </script>
 
-        <!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"
+    ></script>
 
+    <script src="js/vendor/imgslider-2.0.1-min.js"></script>
+    <script src="js/main.js"></script>
 
-		<script src="js/vendor/imgslider-2.0.1-min.js"></script>
-		<script src="js/main.js"></script>
+    <script>
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(
+        window,
+        document,
+        "script",
+        "https://www.google-analytics.com/analytics.js",
+        "ga"
+      );
 
- <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-20629378-12', 'auto');
-  ga('send', 'pageview');
-
-</script>
-    </body>
+      ga("create", "UA-20629378-12", "auto");
+      ga("send", "pageview");
+    </script>
+  </body>
 </html>
