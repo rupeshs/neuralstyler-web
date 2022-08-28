@@ -4,299 +4,375 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!-->
 <html class="no-js" lang="en">
-  <!--<![endif]-->
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <title>NeuralStyler AI - Style transfer video software</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <meta name="description" content="Turn Your Videos/Photos/GIF into Art" />
-    <meta name="author" content="Rupesh Sreeraman" />
-    <link rel="canonical" href="http://neuralstyler.com/" />
-    <meta
-      name="keywords"
-      content="neuralstyle,ai art generator,neural style,neuralstyler,neural style transfer app,style transfer video,ai-generated art"
-    />
-    <link rel="shortcut icon" href="img/favicon.ico" />
+<!--<![endif]-->
 
-    <!-- Open Graph -->
-    <meta property="og:url" content="http://neuralstyler.com" />
-    <meta property="og:title" content="NeuralStyler" />
-    <meta property="og:site_name" content="NeuralStyler AI" />
-    <meta
-      property="og:description"
-      content="Turn Your Videos/Photos/GIF into Art"
-    />
-    <meta
-      property="og:image"
-      content="http://neuralstyler.sourceforge.net/img/og_image.png"
-    />
+<head>
+  <meta charset="utf-8" />
+  <title>NeuralStyler AI - Style transfer video software</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Turn Your Videos/Photos/GIF into Art" />
+  <meta name="author" content="Rupesh Sreeraman" />
+  <link rel="canonical" href="https://neuralstyler.com/" />
+  <meta name="keywords"
+    content="neuralstyle,ai art generator,neural style,neuralstyler,neural style transfer app,style transfer video,ai-generated art" />
+  <link rel="shortcut icon" href="img/favicon.ico?v=2" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!-- Open Graph -->
+  <meta property="og:url" content="https://neuralstyler.com" />
+  <meta property="og:title" content="NeuralStyler" />
+  <meta property="og:site_name" content="NeuralStyler AI" />
+  <meta property="og:description" content="Turn Your Videos/Photos/GIF into Art" />
+  <meta property="og:image" content="https://neuralstyler.com/img/neuralstyler_ultra_feature_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="628" />
 
-    <link
-      href="http://fonts.googleapis.com/css?family=Play"
-      rel="stylesheet"
-      type="text/css"
-    />
+  <link href="http://fonts.googleapis.com/css?family=Play" rel="stylesheet" type="text/css" />
 
-    <!-- Latest compiled and minified CSS -->
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/imgslider-2.0.1-min.css" />
-    <style>
-      body {
-        padding-top: 80px;
-        padding-bottom: 20px;
-        font-family: "Play", sans-serif;
-      }
-      .imrow {
-        display: table;
-        margin: 0 auto;
-      }
-      .Column {
-        margin: 10px;
-        display: inline-block;
-      }
-    </style>
+  <!-- Latest compiled and minified CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/imgslider-2.0.1-min.css" />
+  <style>
+    body {
+      font-family: "Play", sans-serif;
+    }
+  </style>
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <!--[if lt IE 8]>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+
+    <symbol id="cpu-fill" viewBox="0 0 16 16">
+      <path d="M6.5 6a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3z" />
+      <path
+        d="M5.5.5a.5.5 0 0 0-1 0V2A2.5 2.5 0 0 0 2 4.5H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2v1H.5a.5.5 0 0 0 0 1H2A2.5 2.5 0 0 0 4.5 14v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14h1v1.5a.5.5 0 0 0 1 0V14a2.5 2.5 0 0 0 2.5-2.5h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14v-1h1.5a.5.5 0 0 0 0-1H14A2.5 2.5 0 0 0 11.5 2V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5a.5.5 0 0 0-1 0V2h-1V.5zm1 4.5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3A1.5 1.5 0 0 1 6.5 5z" />
+    </symbol>
+    <symbol id="gear-fill" viewBox="0 0 16 16">
+      <path
+        d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 1 0-5.86 2.929 2.929 0 0 1 0 5.858z" />
+    </symbol>
+    <symbol id="speedometer" viewBox="0 0 16 16">
+      <path
+        d="M8 2a.5.5 0 0 1 .5.5V4a.5.5 0 0 1-1 0V2.5A.5.5 0 0 1 8 2zM3.732 3.732a.5.5 0 0 1 .707 0l.915.914a.5.5 0 1 1-.708.708l-.914-.915a.5.5 0 0 1 0-.707zM2 8a.5.5 0 0 1 .5-.5h1.586a.5.5 0 0 1 0 1H2.5A.5.5 0 0 1 2 8zm9.5 0a.5.5 0 0 1 .5-.5h1.5a.5.5 0 0 1 0 1H12a.5.5 0 0 1-.5-.5zm.754-4.246a.389.389 0 0 0-.527-.02L7.547 7.31A.91.91 0 1 0 8.85 8.569l3.434-4.297a.389.389 0 0 0-.029-.518z" />
+      <path fill-rule="evenodd"
+        d="M6.664 15.889A8 8 0 1 1 9.336.11a8 8 0 0 1-2.672 15.78zm-4.665-4.283A11.945 11.945 0 0 1 8 10c2.186 0 4.236.585 6.001 1.606a7 7 0 1 0-12.002 0z" />
+    </symbol>
+    <symbol id="toggles2" viewBox="0 0 16 16">
+      <path d="M9.465 10H12a2 2 0 1 1 0 4H9.465c.34-.588.535-1.271.535-2 0-.729-.195-1.412-.535-2z" />
+      <path
+        d="M6 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm0 1a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm.535-10a3.975 3.975 0 0 1-.409-1H4a1 1 0 0 1 0-2h2.126c.091-.355.23-.69.41-1H4a2 2 0 1 0 0 4h2.535z" />
+      <path d="M14 4a4 4 0 1 1-8 0 4 4 0 0 1 8 0z" />
+    </symbol>
+    <symbol id="tools" viewBox="0 0 16 16">
+      <path
+        d="M1 0L0 1l2.2 3.081a1 1 0 0 0 .815.419h.07a1 1 0 0 1 .708.293l2.675 2.675-2.617 2.654A3.003 3.003 0 0 0 0 13a3 3 0 1 0 5.878-.851l2.654-2.617.968.968-.305.914a1 1 0 0 0 .242 1.023l3.356 3.356a1 1 0 0 0 1.414 0l1.586-1.586a1 1 0 0 0 0-1.414l-3.356-3.356a1 1 0 0 0-1.023-.242L10.5 9.5l-.96-.96 2.68-2.643A3.005 3.005 0 0 0 16 3c0-.269-.035-.53-.102-.777l-2.14 2.141L12 4l-.364-1.757L13.777.102a3 3 0 0 0-3.675 3.68L7.462 6.46 4.793 3.793a1 1 0 0 1-.293-.707v-.071a1 1 0 0 0-.419-.814L1 0zm9.646 10.646a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708zM3 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026L3 11z" />
+    </symbol>
+    <symbol id="chevron-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z" />
+    </symbol>
+    <symbol id="geo-fill" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999zm2.493 8.574a.5.5 0 0 1-.411.575c-.712.118-1.28.295-1.655.493a1.319 1.319 0 0 0-.37.265.301.301 0 0 0-.057.09V14l.002.008a.147.147 0 0 0 .016.033.617.617 0 0 0 .145.15c.165.13.435.27.813.395.751.25 1.82.414 3.024.414s2.273-.163 3.024-.414c.378-.126.648-.265.813-.395a.619.619 0 0 0 .146-.15.148.148 0 0 0 .015-.033L12 14v-.004a.301.301 0 0 0-.057-.09 1.318 1.318 0 0 0-.37-.264c-.376-.198-.943-.375-1.655-.493a.5.5 0 1 1 .164-.986c.77.127 1.452.328 1.957.594C12.5 13 13 13.4 13 14c0 .426-.26.752-.544.977-.29.228-.68.413-1.116.558-.878.293-2.059.465-3.34.465-1.281 0-2.462-.172-3.34-.465-.436-.145-.826-.33-1.116-.558C3.26 14.752 3 14.426 3 14c0-.599.5-1 .961-1.243.505-.266 1.187-.467 1.957-.594a.5.5 0 0 1 .575.411z" />
+    </symbol>
+
+    <symbol id="collection-fill" viewBox="0 0 16 16">
+      <path
+        d="M0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6v7zM2 3a.5.5 0 0 0 .5.5h11a.5.5 0 0 0 0-1h-11A.5.5 0 0 0 2 3zm2-2a.5.5 0 0 0 .5.5h7a.5.5 0 0 0 0-1h-7A.5.5 0 0 0 4 1z" />
+    </symbol>
+    <symbol id="paintstyle" viewBox="0 0 16 16">
+      <path
+        d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z" />
+      <path
+        d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z" />
+    </symbol>
+    <symbol id="scissors" viewBox="0 0 16 16">
+      <path
+        d="M3.5 3.5c-.614-.884-.074-1.962.858-2.5L8 7.226 11.642 1c.932.538 1.472 1.616.858 2.5L8.81 8.61l1.556 2.661a2.5 2.5 0 1 1-.794.637L8 9.73l-1.572 2.177a2.5 2.5 0 1 1-.794-.637L7.19 8.61 3.5 3.5zm2.5 10a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0zm7 0a1.5 1.5 0 1 0-3 0 1.5 1.5 0 0 0 3 0z" />
+    </symbol>
+    <symbol id="aspect-ratio" viewBox="0 0 16 16">
+      <path
+        d="M0 3.5A1.5 1.5 0 0 1 1.5 2h13A1.5 1.5 0 0 1 16 3.5v9a1.5 1.5 0 0 1-1.5 1.5h-13A1.5 1.5 0 0 1 0 12.5v-9zM1.5 3a.5.5 0 0 0-.5.5v9a.5.5 0 0 0 .5.5h13a.5.5 0 0 0 .5-.5v-9a.5.5 0 0 0-.5-.5h-13z" />
+      <path
+        d="M2 4.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1H3v2.5a.5.5 0 0 1-1 0v-3zm12 7a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1 0-1H13V8.5a.5.5 0 0 1 1 0v3z" />
+    </symbol>
+    <symbol id="sliders" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M11.5 2a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM9.05 3a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0V3h9.05zM4.5 7a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2.05 8a2.5 2.5 0 0 1 4.9 0H16v1H6.95a2.5 2.5 0 0 1-4.9 0H0V8h2.05zm9.45 4a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm-2.45 1a2.5 2.5 0 0 1 4.9 0H16v1h-2.05a2.5 2.5 0 0 1-4.9 0H0v-1h9.05z" />
+    </symbol>
+    <symbol id="files" viewBox="0 0 16 16">
+      <path
+        d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1zM3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4z" />
+    </symbol>
+    <symbol id="cart" viewBox="0 0 16 16">
+      <path
+        d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z" />
+      <path
+        d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+
+    </symbol>
+  </svg>
+  <!--[if lt IE 8]>
       <p class="browserupgrade">
         You are using an <strong>outdated</strong> browser. Please
         <a href="http://browsehappy.com/">upgrade your browser</a> to improve
         your experience.
       </p>
     <![endif]-->
-    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-      <div class="container">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle collapsed"
-            data-toggle="collapse"
-            data-target="#navbar"
-            aria-expanded="false"
-            aria-controls="navbar"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"
-            ><img
-              src="img/head.png"
-              style="height: 45px; margin-top: -10px; display: inline-block"
-          /></a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li>
-              <a href="pro.html"
-                ><i class="glyphicon glyphicon-download-alt"></i> Try
-                NeuralStyler Pro</a
-              >
+  <header>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="index.html"><img alt="NeuralStyler" src="img/head.png"
+            style="height: 45px; margin-top: -10px; display: inline-block" /></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" href="downloads.html">Downloads</a>
             </li>
-            <li>
-              <a href="downloads.html"
-                ><i class="glyphicon glyphicon-download-alt"></i> Downloads</a
-              >
+            <li class="nav-item">
+              <a class="nav-link" href="faq.html">FAQ</a>
             </li>
-            <li><a href="styles.html"> Styles</a></li>
           </ul>
         </div>
-        <!--/.navbar-collapse -->
       </div>
     </nav>
+  </header>
 
-    <div class="container" style="margin-top: 5px">
-      <div class="row">
-        <div class="col-md-6">
-          <div style="width: 400px; margin: 0 auto">
-            <div class="slider responsive">
-              <div class="left image">
-                <img src="img/neuralstyler-before.gif" />
-              </div>
-
-              <div class="right image">
-                <img src="img/neuralstyler-after2.gif" />
-              </div>
+  <div class="container" style="margin-top: 5px">
+    <div class="row">
+      <div class="col-md-6">
+        <div>
+          <div class="slider responsive">
+            <div class="right image">
+              <img alt="Before styling" src="img/neuralstyler-after.jpg" />
             </div>
-            <small>Click and drag above split line</small>
+            <div class="left image">
+              <img alt="After styling" src="img/neuralstyler-before.jpg" />
+            </div>
           </div>
         </div>
-        <div class="col-md-6">
-          <h1>NeuralStyler</h1>
-          <h4>Turn Your Videos/Photos/GIF into Art</h4>
-          <div style="font-size: 16px; line-height: 30px">
-            NeuralStyler Artificial Intelligence converts your videos into art
-            works by using styles of famous artists: Van Gogh,Wassily
-            Kandinsky,Georges Seurat etc
-            <h2>Top Features</h2>
-            <ul>
-              <li>Style videos,gif animation and photos</li>
-              <li>No need to upload videos <b>(Offline processing)</b></li>
-              <li>Faster AI styling algorithm</li>
-              <li>
-                <a href="styles.html">Extensible styling system(Plugin)</a>
-              </li>
-              <b style="color: red"> NeuralStyler 3.0 (Pro) is available</b>
-            </ul>
-            <a class="btn btn-primary btn-lg" href="pro.html" role="button">
-              <i class="glyphicon glyphicon-download-alt"></i> Try NeuralStyler
-              Pro</a
-            >
+        <small>Click and drag above split line to see the styling effect</small>
 
-            <a
-              style="margin-top: 5px"
-              class="btn btn-default btn-lg"
-              target="_blank"
-              href="https://www.instagram.com/neuralstyler.ai/"
-              role="button"
-            >
-              <img src="img/instagram_icon.png" /> Follow us on Instagram</a
-            >
+
+
+      </div>
+      <div class="col-md-6">
+        <h1 style="margin-top:15px;">NeuralStyler Ultra</h1>
+        <h4>Turn Your Videos/Photos/GIF into Art</h4>
+        <div style=" font-size: 16px; line-height: 30px">
+          NeuralStyler Artificial Intelligence converts your videos into art
+          works by using styles of famous artists: Van Gogh,Wassily
+          Kandinsky,Georges Seurat etc
+          <br>
+          <div style="margin-top:30px;margin-bottom:40px;">
+            <h5>
+              SINGLE-USER LICENSE : <b><del>200 USD</del></b>
+            </h5>
+            <h5>Offer price : <b>100 USD</b></h5>
+          </div>
+          <p style="margin-top: 25px">
+            <a class="btn btn-primary btn-lg" href="mailto:exmplayer.dev@gmail.com?Subject=NeuralStyler" role="button"
+              style="margin-right: 10px">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+              </svg> Buy</a>
+
+            <a class="btn btn-warning btn-lg"
+              href="https://neuralstyler.com/downloads/neuralstyler-4.0.0-portable-x64.7z" role="button">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-download"
+                viewBox="0 0 16 16">
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
+              </svg> Download Demo</a>
+          </p>
+          <h6>For more queries drop us a mail at exmplayer.dev@gmail.com</h6>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3  g-4 py-5">
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#cpu-fill" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Offline processing</h4>
+            <p>No need to upload image/video for processing</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#collection-fill" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Any style image</h4>
+            <p>Select any painting and transfer style, no need to train neural network</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#speedometer2" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Fast style transfer</h4>
+            <p>New improved AI algorithm for fast style transfer</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#files" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Media types</h4>
+            <p>Supports image,video or GIF files styling</p>
+          </div>
+        </div>
+
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#sliders" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Style strength</h4>
+            <p>Control style strength</p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#scissors" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Video trimmer</h4>
+            <p>Trim and style a section of the video </p>
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#aspect-ratio" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Image size</h4>
+            <p> Supports different resolutions,option to keep aspect ratio, option to disable scaling</p>
+
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#paintstyle" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Keep original color</h4>
+            <p> Option to keep the original colors of the image/video </p>
+
+          </div>
+        </div>
+        <div class="col d-flex align-items-start">
+          <svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+            <use xlink:href="#cart" />
+          </svg>
+          <div>
+            <h4 class="fw-bold mb-0">Remove watermark</h4>
+            <p> You can remove watermark from styled images/videos in the paid version </p>
+
           </div>
         </div>
       </div>
-      <hr />
-      <div class="row">
-        <div class="col-md-6">
-          <div style="margin: 0 auto">
-            <img class="img-responsive" src="img/neuralstyler2.jpg" />
-          </div>
-        </div>
-        <div class="col-md-6" style="font-size: 16px; line-height: 25px">
-          <div style="width: 400px; margin: 0 auto">
-            <h3>NeuralStyler 2.0 Features</h3>
-            <ul>
-              <li>Adjust style strength</li>
-              <li>Video trimmer</li>
-              <li>Added option to keep aspect ratio</li>
-              <li>Custom resolution</li>
-              <li>Added pause functionality</li>
-              <li>Added online help documentation</li>
-              <li>Option to disable scaling</li>
-              <li>Option to preview styled frame</li>
-              <li>Drag and drop support</li>
-            </ul>
-            <a
-              class="btn btn-success btn-lg"
-              href="downloads.html"
-              role="button"
-            >
-              <i class="glyphicon glyphicon-download-alt"></i> Download it for
-              free</a
-            >
-          </div>
+      <img alt="NeuralStyler Ultra" src="img/neuralstyler-ultra-windows-11.png" />
+    </div>
+    <div>
+      <h3 class="text-center " style="margin:20px;"> Testimonials</h3>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card"> <i class="fa fa-quote-left u-color"></i>
+          <p class="fst-italic">"I'm making a music video and it looks stunning thanks to your software"</p>
+
+          <div class="user-about"> <span class="fw-bold">- Matej Tkáč</span></div>
+
         </div>
       </div>
 
-      <hr />
-      <div class="imrow">
-        <div class="Column">
-          <img src="img/styles/kandinsky-style.jpg" alt="kandinsky-style" />
-          <div class="caption">
-            <h4>Kandinsky style</h4>
-          </div>
-        </div>
+      <div class="col-md-4">
+        <div class="card"> <i class="fa fa-quote-left u-color"></i>
+          <p class="fst-italic">"As I am not an expert in any code, neural styler was an epic discovery for me. TNX"</p>
 
-        <div class="Column">
-          <img src="img/styles/starrynight-style.jpg" alt="starrynight-style" />
-          <div class="caption">
-            <h4>Starry Night</h4>
-          </div>
-        </div>
+          <div class="user-about"> <span class="fw-bold">- Milan Latkovic </span></div>
 
-        <div class="Column">
-          <img src="img/styles/hokusai-style.jpg" alt="hokusai-style" />
-          <div class="caption">
-            <h4>Hokusai style</h4>
-          </div>
         </div>
-
-        <div class="Column">
-          <img src="img/styles/cubist-style.jpg" alt="cubist-style" />
-          <div class="caption">
-            <h4>Cubist style</h4>
-          </div>
-        </div>
-        <div class="Column">
-          <img src="img/styles/seurat-style.jpg" alt="seurat-style" />
-          <div class="caption">
-            <h4>Seurat style</h4>
-          </div>
-        </div>
-        <br />
       </div>
-      <center>
-        <a
-          style="margin: 0 auto"
-          class="btn btn-primary btn-lg"
-          href="styles.html"
-          role="button"
-          ><i class="glyphicon glyphicon-download"></i> Get more styles</a
-        >
-      </center>
 
-      <hr />
+      <div class="col-md-4">
+        <div class="card"> <i class="fa fa-quote-left u-color"></i>
+          <p class="fst-italic">"Compliments for your NeuralStyler. I'm a digital artist and I found your program very
+            interesting"</p>
 
+          <div class="user-about"> <span class="fw-bold">- Mauro D'Andrea </span></div>
+
+        </div>
+      </div>
+
+    </div>
+    <div class="container mt-5 mb-5">
+      <hr>
       <footer>
         <p>
           &copy; 2016-2022<a href="https://github.com/rupeshs">
-            Rupesh Sreeraman</a
-          ><a href="terms.html" style="margin-left: 5px"> Terms of use</a>
+            Rupesh Sreeraman</a><a href="terms.html" style="margin-left: 5px"> Terms of use</a>
         </p>
       </footer>
     </div>
-    <!-- /container -->
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>
-      window.jQuery ||
-        document.write(
-          '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
-        );
-    </script>
 
-    <!-- Latest compiled and minified JavaScript -->
-    <script
-      src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"
-    ></script>
-
-    <script src="js/vendor/imgslider-2.0.1-min.js"></script>
-    <script src="js/main.js"></script>
-
-    <script>
-      (function (i, s, o, g, r, a, m) {
-        i["GoogleAnalyticsObject"] = r;
-        (i[r] =
-          i[r] ||
-          function () {
-            (i[r].q = i[r].q || []).push(arguments);
-          }),
-          (i[r].l = 1 * new Date());
-        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
-        a.async = 1;
-        a.src = g;
-        m.parentNode.insertBefore(a, m);
-      })(
-        window,
-        document,
-        "script",
-        "https://www.google-analytics.com/analytics.js",
-        "ga"
+  </div>
+  <!-- /container -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+  <script>
+    window.jQuery ||
+      document.write(
+        '<script src="js/vendor/jquery-1.11.2.min.js"><\/script>'
       );
+  </script>
+  <script src="js/vendor/imgslider-2.0.1-min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i["GoogleAnalyticsObject"] = r;
+      (i[r] =
+        i[r] ||
+        function () {
+          (i[r].q = i[r].q || []).push(arguments);
+        }),
+        (i[r].l = 1 * new Date());
+      (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+      a.async = 1;
+      a.src = g;
+      m.parentNode.insertBefore(a, m);
+    })(
+      window,
+      document,
+      "script",
+      "https://www.google-analytics.com/analytics.js",
+      "ga"
+    );
 
-      ga("create", "UA-20629378-12", "auto");
-      ga("send", "pageview");
-    </script>
-  </body>
+    ga("create", "UA-20629378-12", "auto");
+    ga("send", "pageview");
+  </script>
+</body>
+
 </html>
